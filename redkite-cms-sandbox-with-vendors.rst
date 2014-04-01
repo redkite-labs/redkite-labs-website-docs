@@ -1,5 +1,5 @@
-RedKite CMS Sandbox
-===================
+RedKite CMS
+===========
 Thanks for interesting in the RedKite CMS Sandbox.
 
 A Symfony2 application powered by RedKite CMS with all required vendors installed.
@@ -72,13 +72,20 @@ Installing RedKite CMS from the console is really easy:
 
     app/console redkitecms:configure
 
-This will run the interactive command and provide the required information. If everything goes well,
-you will be prompted that the configuration has been written and you ready to start the install. Run
-the following command from the console:
+This will run the interactive command and provide the required information. If everything works,
+you will be prompted that the configuration has been written and you ready to start the install.
+
+.. note::
+
+    By now, you will use the **rkconsole** console instead of the canonical **console** provided
+    by Symfony2. The rule is easy: every time you need to run a command for the **rkcms[*]** environments,
+    you must use the **rkconsole**
+
+Run the following command from the console:
     
 .. code-block:: text
 
-    app/console redkitecms:install --env=rkcms
+    app/rkconsole redkitecms:install --env=rkcms
 
 .. note::
 
@@ -116,7 +123,7 @@ Enjoy your RedKite CMS application!!
 Use another database instead of mysql, postgres or sqlite
 ---------------------------------------------------------
 The **RedKiteCmsInstallerBundle**, which supports you to properly set up RedKite CMS,
-can install with one command just the  mysql, postgres or sqlite database, but with a 
+can install with one command just the mysql, postgres or sqlite database, but with a
 little effort you can easily work with any database supported by Propel, the ORM used
 by RedKite CMS to interface with the database.
 
@@ -127,7 +134,6 @@ The first step is to run the following command from  the top folder of your appl
     php app/console redkitecms:configure --no-interaction
 	
 If you want to use a custom bundle than the default one, use the following command:
-
 
 .. code-block:: text
 
@@ -140,7 +146,7 @@ with your database:
 
 .. code-block:: text
 
-    rkcms_database_driver: sqlite
+    rkcms_database_driver: [YOUR DRIVER]
     rkcms_database_host: localhost
     rkcms_database_port: 3306
     rkcms_database_name: redkite
@@ -159,25 +165,20 @@ your database.
             driver:               %rkcms_database_driver%
             user:                 %rkcms_database_user%
             password:             %rkcms_database_password%
-            dsn:                  %rkcms_database_driver%:%kernel.root_dir%/../%rkcms_database_name%
+            dsn:                  [YOUR DSN]
             options:              {}
             attributes:           {}
 
 Refer the `Propel official documentation`_ if you require more information about.
 
-Return to your console and run the following commands:
+When you are done, return to your console and run the following command to complete the installatio:
 
 .. code-block:: text
 
-    php app/console redkitecms:environments:setup
-    php app/console redkitecms:database:bootstrap --env=rkcms
-	
-Both of these commands will run in interact mode and require you to enter the same
-configuration parameters, so it could be easy to use the non interactive mode, providing
-all the required switches
+    php app/rkconsole redkitecms:install --env=rkcms
 
 
-.. _`RedKite CMS Sandbox` : /download/cms/RedKiteCmsSandbox-1.1.1.zip
+.. _`RedKite CMS Sandbox` : /download/cms/RedKiteCms-1.1.3.2.zip
 .. _`this guide` : http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
 .. _`Symfony2 book paragraph` : http://symfony.com/doc/current/book/installation.html#configuration-and-setup
 .. _`Propel official documentation` : http://propelorm.org/cookbook/symfony2/working-with-symfony2.html#symfony-configuration

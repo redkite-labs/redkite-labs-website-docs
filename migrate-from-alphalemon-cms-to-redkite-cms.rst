@@ -290,7 +290,7 @@ Clear the cache for all the environments:
 .. code:: text
 
     php app/console ca:c
-    php app/console ca:c --env=rkcms_dev
-    php app/console propel:model:build --env=rkcms
-    php app/console assets:install web --symlink --env=rkcms
-    php app/console assetic:dump --env=rkcms
+    php app/rkconsole ca:c --env=rkcms_dev
+    php app/rkconsole propel:model:build --env=rkcms
+    php app/rkconsole assets:install web --symlink --env=rkcms
+    php app/rkconsole assetic:dump --env=rkcms

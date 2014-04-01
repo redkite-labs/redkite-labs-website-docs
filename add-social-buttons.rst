@@ -68,7 +68,7 @@ To complete the installation, you must clear the cache for the **alcms** environ
 
 .. code:: text
 
-    ./php app/console cache:clear --env=alcms
+    ./php app/rkconsole cache:clear --env=alcms
 
 
 Define the slot where the button will be placed
@@ -113,7 +113,7 @@ has been run:
 
 .. code:: text
 
-    ./php app/console alphalemon:generate:templates AlphaLemon2012ThemeBundle
+    ./php app/rkconsole redkite:generate:templates RedKite2012ThemeBundle
 
 
 Add the button to the webpage

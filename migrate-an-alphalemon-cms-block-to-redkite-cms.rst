@@ -59,6 +59,6 @@ the migration:
 
 .. code:: text
 
-    php app/console ca:c --env=rkcms_dev
-    php app/console assets:install web --env=rkcms
-    php app/console assetic:dump --env=rkcms
+    php app/rkconsole ca:c --env=rkcms_dev
+    php app/rkconsole assets:install web --env=rkcms
+    php app/rkconsole assetic:dump --env=rkcms

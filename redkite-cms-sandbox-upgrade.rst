@@ -19,8 +19,8 @@ Install
 
 .. code:: text
 
-    php app/console assets:install --env=rkcms web [--symlink]
-    php app/console assetic:dump --env=rkcms
-    php app/console ca:c --env=rkcms
+    php app/rkconsole assets:install --env=rkcms web [--symlink]
+    php app/rkconsole assetic:dump --env=rkcms
+    php app/rkconsole ca:c --env=rkcms
 
-.. _`RedKite CMS Sandbox upgrade` : /download/cms/RedKiteCmsSandbox-1.1.1-upgrade.zip
+.. _`RedKite CMS Sandbox upgrade` : /download/cms/RedKiteCmsSandbox-1.1.2-upgrade.zip

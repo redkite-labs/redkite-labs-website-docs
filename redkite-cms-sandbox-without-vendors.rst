@@ -32,9 +32,9 @@ and then run the following command:
 
 .. code-block:: text
 
-    php composer.phar create-project redkite-labs/redkite-cms-sandbox -s stable RedKiteCmsSandbox 1.1.1 --no-dev
+    php composer.phar create-project redkite-labs/redkite-cms RedKiteCms
 
-This will install a fresh RedKite CMS Sandbox with all the tests and git references.
+This will install a fresh RedKite CMS application with all the tests and git references.
 
 When composer downloaded all the libraries, follow these `instructions`_ to install your 
 RedKite CMS Sandbox.

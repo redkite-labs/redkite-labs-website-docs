@@ -68,8 +68,8 @@ Clear the cache for all the environments:
 .. code:: text
 
     php app/console ca:c
-    php app/console ca:c --env=rkcms_dev
-    php app/console --env=rkcms redkitecms:generate:templates [YOUR THEME BUNDLE]
+    php app/rkconsole ca:c --env=rkcms_dev
+    php app/rkconsole --env=rkcms redkitecms:generate:templates [YOUR THEME BUNDLE]
 
 Multi languages websites
 ------------------------

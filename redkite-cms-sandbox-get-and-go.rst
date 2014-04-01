@@ -52,8 +52,11 @@ displaying nothing on the screen.
 
 Permissions
 ~~~~~~~~~~~
-Set up the permissions as explained in this `Symfony2 book paragraph`_. This latest step 
-is not required for windows users.	
+Set up the permissions as explained in this `Symfony2 book paragraph`_ and
+be sure that the application folder has write permissions, otherwise RedKiteCMS
+will not be able to save data into the database.
+
+This step is not required for windows users.	
 
 
 Web site url
@@ -64,14 +67,14 @@ with the url where your application will be deployed:
 .. code-block:: text
 
     red_kite_cms:
-        website-url: http://example.com
+        website_url: http://example.com
 
 For example:
 
 .. code-block:: text
 
     red_kite_cms:
-        website-url: http://redkite-labs.com
+        website_url: http://redkite-labs.com
 
 This setting is required to correctly generate the web site's sitemap.
 
@@ -89,6 +92,6 @@ Congratulations!
 Enjoy your RedKite CMS application!!
 
 
-.. _`Get & Go Sandbox` : /download/cms/RedKiteCmsSandbox-GetAndGo-1.1.1.zip
+.. _`Get & Go Sandbox` : /download/cms/RedKiteCms-GetAndGo-1.1.3.2.zip
 .. _`this guide` : http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
 .. _`Symfony2 book paragraph` : http://symfony.com/doc/current/book/installation.html#configuration-and-setup
