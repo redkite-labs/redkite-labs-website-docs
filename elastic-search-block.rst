@@ -79,7 +79,7 @@ is **search**.
 
 The Search results listener
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Create a **AlSearchResultsRenderingListener.php** under the **Listener** folder and add the following code:
+Create a **SearchResultsRenderingListener.php** under the **Listener** folder and add the following code:
 
 .. code-block:: php
 
@@ -97,7 +97,7 @@ Create a **AlSearchResultsRenderingListener.php** under the **Listener** folder 
         }
     }
 
-The listener extends the abstract Search Bundle object **AlSearchResultsRenderingListener**
+The listener extends the abstract Search Bundle object **SearchResultsRenderingListener**
 which requires to implements a protected method called configure. 
 
 This method must return an array that defines a single option named **slot** which
@@ -138,7 +138,7 @@ the **Resources/config/service.xml** of your deploy bundle and add the following
 
 The Search Form listener
 ~~~~~~~~~~~~~~~~~~~~~~~~
-The Search Form listener must display the search form on the page, so create a **AlSearchFormRenderingListener.php** 
+The Search Form listener must display the search form on the page, so create a **SearchFormRenderingListener.php**
 under the **Listener** folder and add the following code:
 
 .. code-block:: php

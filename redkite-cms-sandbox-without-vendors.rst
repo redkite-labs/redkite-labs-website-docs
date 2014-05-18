@@ -41,4 +41,4 @@ RedKite CMS Sandbox.
 
 .. _`composer` : https://getcomposer.org
 .. _`contributing` : getting-started-contributing-to-redkite-cms
-.. _`instructions` : download-redkite-cms-sandbox#set-up-redkite-cms-sandbox
+.. _`instructions` : download-redkite-cms-sandbox#set-up-redkite-cms-application
