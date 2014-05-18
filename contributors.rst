@@ -15,7 +15,7 @@ Amazing people who gave wise advices.
 Top contributors
 ----------------
  
-- **Warnar Boekkooi** top developer
+- **Warnar Boekkooi**: core developer
 - **Barry Holland**: bug finder, documentation proof-reader
 - **Mark Ford**: documentation proof-reader
 - **Saidou Gueye**: bug finder, involved with installation process
@@ -25,6 +25,8 @@ Top contributors
 Contributors
 ------------
 
+- franzholz
+- dantleech
 - Piscis
 - phramz
 - Spike31
